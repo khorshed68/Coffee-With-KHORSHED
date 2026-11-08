@@ -1,0 +1,8 @@
+# Customer data created at runtime
+api/data/*.json
+
+# Local tooling and OS files
+.claude/
+Thumbs.db
+desktop.ini
+.DS_Store

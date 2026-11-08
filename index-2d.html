@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coffee With KHORSHED</title>
+  <meta name="description" content="Coffee With KHORSHED — speciality coffee, slow brews and good conversation.">
+  <meta name="theme-color" content="#efe6d9">
+  <meta property="og:title" content="Coffee With KHORSHED">
+  <meta property="og:description" content="Speciality coffee, slow brews and good conversation.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+  <meta property="og:image" content="assets/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <a href="#top" class="logo" aria-label="Coffee With KHORSHED home">
+      <svg class="logo-mark" viewBox="90 38 220 220" aria-hidden="true">
+        <path class="bl" d="M200 50 C170 110 230 190 200 250 A70 100 0 0 1 200 50 Z"/>
+        <path class="br" d="M200 50 C170 110 230 190 200 250 A70 100 0 0 0 200 50 Z"/>
+      </svg>
+      <span class="logo-text">
+        <span class="logo-small">Coffee</span>
+        <span class="logo-with">with</span>
+        <span class="logo-big">KHORSHED</span>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#top" data-section="top">Home</a>
+      <a href="#menu" data-section="menu">Menu</a>
+      <a href="#story" data-section="story">Our Story</a>
+      <a href="#reviews" data-section="reviews">Reviews</a>
+      <a href="#visit" data-section="visit">Visit</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="cart-btn" type="button" data-open-cart aria-label="Open your order">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <a href="#menu" class="pill nav-order">Order Now</a>
+      <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <nav aria-label="Mobile">
+      <a href="#top">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#story">Our Story</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <div class="mobile-menu-foot">
+      <button type="button" class="pill" data-open-booking>Book a Table</button>
+      <p>Sat – Thu · 8:00 – 22:00<br>Friday · 15:00 – 23:00</p>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- ============ SCENE 1 : WAKE THE BEANS ============ -->
+    <section class="scene scene-1" data-scene="1">
+      <div class="stage">
+        <h1 class="mega hero-title">Wake<br>the<br>Beans</h1>
+
+        <div class="visual">
+          <svg id="beanSvg" viewBox="0 0 400 700" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+            <defs>
+              <radialGradient id="beanGrad" cx="38%" cy="32%" r="75%">
+                <stop offset="0" stop-color="#8a5634"/>
+                <stop offset=".45" stop-color="#5b321c"/>
+                <stop offset="1" stop-color="#2a150b"/>
+              </radialGradient>
+              <linearGradient id="beanInner" x1="0" x2="1">
+                <stop offset="0" stop-color="#3a1e10"/>
+                <stop offset="1" stop-color="#1c0e06"/>
+              </linearGradient>
+              <linearGradient id="glassGrad" x1="0" x2="1">
+                <stop offset="0" stop-color="#ffffff" stop-opacity=".55"/>
+                <stop offset=".25" stop-color="#ffffff" stop-opacity=".12"/>
+                <stop offset=".8" stop-color="#ffffff" stop-opacity=".08"/>
+                <stop offset="1" stop-color="#ffffff" stop-opacity=".45"/>
+              </linearGradient>
+              <linearGradient id="steel" x1="0" x2="1">
+                <stop offset="0" stop-color="#6d6a66"/>
+                <stop offset=".2" stop-color="#e9e6e1"/>
+                <stop offset=".45" stop-color="#9c9893"/>
+                <stop offset=".7" stop-color="#f4f2ee"/>
+                <stop offset="1" stop-color="#5d5a56"/>
+              </linearGradient>
+              <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#f3d58e"/>
+                <stop offset=".5" stop-color="#b8862e"/>
+                <stop offset="1" stop-color="#7a5418"/>
+              </linearGradient>
+              <linearGradient id="espresso" x1="0" x2="1">
+                <stop offset="0" stop-color="#7a4421"/>
+                <stop offset=".4" stop-color="#c88a52"/>
+                <stop offset=".6" stop-color="#d9a26a"/>
+                <stop offset="1" stop-color="#6b3a1c"/>
+              </linearGradient>
+              <clipPath id="glassClip">
+                <path d="M152 362 h96 v118 q0 22 -22 34 h-52 q-22 -12 -22 -34 z"/>
+              </clipPath>
+            </defs>
+
+            <!-- bean -->
+            <g transform="translate(0 36)">
+            <g id="beanFloat">
+              <g id="beanLeft">
+                <path d="M200 50 C170 110 230 190 200 250 A70 100 0 0 1 200 50 Z" fill="url(#beanGrad)"/>
+                <path d="M200 50 C170 110 230 190 200 250" fill="none" stroke="url(#beanInner)" stroke-width="7" stroke-linecap="round"/>
+                <path d="M160 95 q-14 40 -4 90" fill="none" stroke="#c48a5c" stroke-opacity=".35" stroke-width="5" stroke-linecap="round"/>
+              </g>
+              <g id="beanRight">
+                <path d="M200 50 C170 110 230 190 200 250 A70 100 0 0 0 200 50 Z" fill="url(#beanGrad)"/>
+                <path d="M200 50 C170 110 230 190 200 250" fill="none" stroke="url(#beanInner)" stroke-width="7" stroke-linecap="round"/>
+              </g>
+            </g>
+            </g>
+
+            <!-- falling grounds -->
+            <g id="grounds"></g>
+
+            <!-- espresso stream -->
+            <rect id="stream1" x="195" y="528" width="10" height="0" rx="5" fill="url(#espresso)"/>
+
+            <!-- grinder glass -->
+            <g id="grinder">
+              <g clip-path="url(#glassClip)">
+                <rect id="groundsFill" x="150" y="520" width="100" height="0" fill="#3b2213"/>
+                <rect id="groundsTop" x="150" y="520" width="100" height="6" fill="#5a3520" opacity="0"/>
+              </g>
+              <path d="M152 362 h96 v118 q0 22 -22 34 h-52 q-22 -12 -22 -34 z" fill="url(#glassGrad)" stroke="#7d6a5c" stroke-opacity=".35" stroke-width="1.5"/>
+              <ellipse cx="200" cy="362" rx="48" ry="7" fill="none" stroke="#7d6a5c" stroke-opacity=".35" stroke-width="1.5"/>
+              <rect x="146" y="440" width="108" height="22" rx="3" fill="url(#steel)"/>
+              <rect x="146" y="440" width="108" height="3" fill="#fff" opacity=".6"/>
+              <!-- gold tap -->
+              <rect x="112" y="446" width="36" height="10" rx="3" fill="url(#gold)"/>
+              <rect x="104" y="430" width="14" height="42" rx="6" fill="url(#gold)"/>
+              <rect x="186" y="512" width="28" height="16" rx="3" fill="url(#steel)"/>
+              <path d="M160 372 v90" stroke="#fff" stroke-opacity=".6" stroke-width="3" stroke-linecap="round"/>
+            </g>
+          </svg>
+        </div>
+
+        <aside class="side">
+          <span class="num">1</span>
+          <p class="eyebrow">Freshly roasted · Every week</p>
+          <h2 class="side-title">Speciality Coffee</h2>
+          <p class="side-copy">Hand-picked beans, roasted in small batches and ground the moment you order. Every cup at Coffee With KHORSHED starts with a bean worth waking up for.</p>
+          <a href="#menu" class="pill">Find Your Brew</a>
+        </aside>
+
+        <a href="#menu" class="explore">Explore the Menu <span>→</span></a>
+      </div>
+    </section>
+
+    <!-- ============ SCENE 2 : LET IT BLOOM ============ -->
+    <section class="scene scene-2" data-scene="2">
+      <div class="stage">
+        <span class="num num-corner">2</span>
+
+        <div class="visual">
+          <svg id="bloomSvg" viewBox="0 0 500 700" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+            <defs>
+              <linearGradient id="clay" x1="0" x2="1">
+                <stop offset="0" stop-color="#8f4a2f"/>
+                <stop offset=".35" stop-color="#c8704b"/>
+                <stop offset=".6" stop-color="#d98a62"/>
+                <stop offset="1" stop-color="#7c3e26"/>
+              </linearGradient>
+              <linearGradient id="kettle" x1="0" x2="1">
+                <stop offset="0" stop-color="#4a4744"/>
+                <stop offset=".35" stop-color="#bdb8b2"/>
+                <stop offset=".55" stop-color="#6c6864"/>
+                <stop offset="1" stop-color="#2e2c2a"/>
+              </linearGradient>
+              <linearGradient id="brew" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#6b3a1c"/>
+                <stop offset=".15" stop-color="#3a1c0d"/>
+                <stop offset="1" stop-color="#1e0d05"/>
+              </linearGradient>
+              <clipPath id="carafeClip">
+                <path d="M190 420 C150 470 140 560 175 600 Q250 640 325 600 C360 560 350 470 310 420 Z"/>
+              </clipPath>
+            </defs>
+
+            <!-- incoming espresso from scene 1 -->
+            <rect id="streamIn" x="245" y="0" width="10" height="190" rx="5" fill="url(#espresso)"/>
+
+            <!-- kettle -->
+            <g id="kettleG">
+              <path d="M520 40 C470 40 430 70 428 120 C426 160 470 190 520 190 Z" fill="url(#kettle)"/>
+              <path d="M440 150 C400 160 380 120 360 110 C340 100 320 108 300 138" fill="none" stroke="url(#kettle)" stroke-width="12" stroke-linecap="round"/>
+              <path d="M440 150 C400 160 380 120 360 110 C340 100 320 108 300 138" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="2" stroke-linecap="round"/>
+            </g>
+            <path id="water" d="M300 140 C292 160 282 175 272 196" fill="none" stroke="#dfe9ee" stroke-opacity=".9" stroke-width="4" stroke-linecap="round"/>
+
+            <!-- dripper -->
+            <g id="dripper">
+              <path d="M168 176 l10 -14 l10 12 l10 -14 l10 12 l10 -14 l10 12 l10 -14 l10 12 l10 -14 l10 12 l10 -14 l10 12 l10 -14 l10 12 l10 -14 l6 16 Z" fill="#efe1c8"/>
+              <path d="M155 190 L222 300 L278 300 L345 190 Z" fill="url(#clay)"/>
+              <ellipse cx="250" cy="190" rx="95" ry="18" fill="#a85a39"/>
+              <ellipse id="bedTop" cx="250" cy="192" rx="80" ry="13" fill="#4a2814"/>
+              <path d="M342 205 C395 205 400 270 300 278" fill="none" stroke="url(#clay)" stroke-width="14" stroke-linecap="round"/>
+              <ellipse cx="250" cy="305" rx="78" ry="12" fill="#b4623f"/>
+              <ellipse cx="250" cy="302" rx="78" ry="10" fill="#d0805a"/>
+              <path d="M190 210 L232 292" stroke="#fff" stroke-opacity=".18" stroke-width="5" stroke-linecap="round"/>
+            </g>
+
+            <!-- drip -->
+            <rect id="drip" x="247" y="312" width="6" height="0" rx="3" fill="#3a1c0d"/>
+
+            <!-- carafe -->
+            <g id="carafe">
+              <g clip-path="url(#carafeClip)">
+                <rect id="brewFill" x="130" y="640" width="240" height="0" fill="url(#brew)"/>
+              </g>
+              <path d="M190 420 C150 470 140 560 175 600 Q250 640 325 600 C360 560 350 470 310 420 Z" fill="#fff" fill-opacity=".14" stroke="#6f5f53" stroke-opacity=".4" stroke-width="2"/>
+              <path d="M200 384 h100 v36 h-100 z" fill="#fff" fill-opacity=".12" stroke="#6f5f53" stroke-opacity=".4" stroke-width="2"/>
+              <ellipse cx="250" cy="384" rx="56" ry="9" fill="none" stroke="#6f5f53" stroke-opacity=".45" stroke-width="2"/>
+              <path d="M336 450 C390 450 395 560 340 570" fill="none" stroke="#6f5f53" stroke-opacity=".4" stroke-width="10" stroke-linecap="round"/>
+              <path d="M178 480 C170 520 172 560 186 585" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="5" stroke-linecap="round"/>
+            </g>
+          </svg>
+        </div>
+
+        <h2 class="mega bloom-title">Let it<br>Bloom</h2>
+
+        <aside class="side side-bottom">
+          <p class="eyebrow">Slow Pour Ritual</p>
+          <p class="side-copy">Hot water meets fresh grounds and the coffee breathes. Thirty seconds of bloom, then a slow, steady pour — clean, sweet and full of character.</p>
+          <a href="#menu" class="link">See slow brews <span>→</span></a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ SCENE 3 : MAKE TIME TASTE BETTER ============ -->
+    <section class="scene scene-3" data-scene="3">
+      <div class="stage">
+        <div class="marble-panel">
+          <svg class="marble" viewBox="0 0 600 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <defs>
+              <linearGradient id="stripes" x1="0" y1="0" x2=".35" y2=".12" spreadMethod="repeat">
+                <stop offset="0" stop-color="#c9864c"/>
+                <stop offset=".22" stop-color="#e9c294"/>
+                <stop offset=".38" stop-color="#f6e2c6"/>
+                <stop offset=".55" stop-color="#b9713c"/>
+                <stop offset=".75" stop-color="#8a4b23"/>
+                <stop offset="1" stop-color="#c9864c"/>
+              </linearGradient>
+              <filter id="swirl" x="-20%" y="-20%" width="140%" height="140%">
+                <feTurbulence type="fractalNoise" baseFrequency="0.0045 0.009" numOctaves="3" seed="7"/>
+                <feDisplacementMap in="SourceGraphic" scale="190" xChannelSelector="R" yChannelSelector="G"/>
+              </filter>
+            </defs>
+            <g id="marbleG">
+              <rect x="-100" y="-100" width="800" height="1000" fill="url(#stripes)" filter="url(#swirl)"/>
+            </g>
+          </svg>
+
+          <svg id="latteSvg" class="latte" viewBox="0 0 600 800" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+            <defs>
+              <linearGradient id="ceramic" x1="0" x2="1">
+                <stop offset="0" stop-color="#bfb3a5"/>
+                <stop offset=".3" stop-color="#efe8de"/>
+                <stop offset=".6" stop-color="#e3d9cc"/>
+                <stop offset="1" stop-color="#9f9283"/>
+              </linearGradient>
+              <radialGradient id="latteGrad" cx="50%" cy="50%" r="55%">
+                <stop offset="0" stop-color="#c99560"/>
+                <stop offset=".75" stop-color="#b47a43"/>
+                <stop offset="1" stop-color="#7a4520"/>
+              </radialGradient>
+              <filter id="soft"><feGaussianBlur stdDeviation="1.2"/></filter>
+              <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="14"/></filter>
+            </defs>
+
+            <!-- twisting ribbon -->
+            <path id="ribbonA" d="M300 -20 C380 40 220 90 300 150 C380 210 220 260 300 320 C350 360 300 400 300 430" fill="none" stroke="#4a2612" stroke-width="22" stroke-linecap="round"/>
+            <path id="ribbonB" d="M300 -20 C220 40 380 90 300 150 C220 210 380 260 300 320 C260 360 300 400 300 430" fill="none" stroke="#b5733d" stroke-width="12" stroke-linecap="round"/>
+            <g id="drops">
+              <circle cx="372" cy="80" r="5" fill="#5a3018"/>
+              <circle cx="222" cy="200" r="4" fill="#9a5c2e"/>
+              <circle cx="390" cy="250" r="3" fill="#5a3018"/>
+              <circle cx="205" cy="120" r="3" fill="#5a3018"/>
+            </g>
+
+            <g id="cup" transform="translate(300 470)">
+              <ellipse cx="10" cy="190" rx="220" ry="60" fill="#3a1e0d" opacity=".35" filter="url(#shadow)"/>
+              <ellipse cx="0" cy="170" rx="200" ry="62" fill="url(#ceramic)"/>
+              <ellipse cx="0" cy="164" rx="170" ry="48" fill="#eee6db"/>
+              <path d="M118 30 C200 20 210 120 110 118" fill="none" stroke="url(#ceramic)" stroke-width="26" stroke-linecap="round"/>
+              <path d="M-140 0 C-140 120 -80 175 0 175 C80 175 140 120 140 0 Z" fill="url(#ceramic)"/>
+              <g id="speckles"></g>
+              <ellipse cx="0" cy="0" rx="140" ry="62" fill="#f3ece2"/>
+              <ellipse cx="0" cy="2" rx="126" ry="54" fill="url(#latteGrad)"/>
+              <!-- rosetta latte art -->
+              <g id="art" transform="scale(1 .43)" filter="url(#soft)">
+                <path d="M0 105 L0 -110" stroke="#f6ead7" stroke-width="6" stroke-linecap="round"/>
+                <path d="M-88 70 Q0 -10 88 70 Q0 30 -88 70 Z" fill="#f6ead7"/>
+                <path d="M-80 30 Q0 -45 80 30 Q0 -8 -80 30 Z" fill="#f6ead7"/>
+                <path d="M-70 -8 Q0 -78 70 -8 Q0 -44 -70 -8 Z" fill="#f6ead7"/>
+                <path d="M-58 -44 Q0 -104 58 -44 Q0 -76 -58 -44 Z" fill="#f6ead7"/>
+                <path d="M-44 -76 Q0 -124 44 -76 Q0 -100 -44 -76 Z" fill="#f6ead7"/>
+                <path d="M0 -92 C-34 -124 -22 -150 0 -132 C22 -150 34 -124 0 -92 Z" fill="#f6ead7"/>
+              </g>
+            </g>
+          </svg>
+
+          <div class="card card-origin"><b>Origin</b><span>Ethiopia · Yirgacheffe</span><i></i></div>
+          <div class="card card-roast"><b>Roast</b><span>Medium · rested 14 days</span><i></i></div>
+          <div class="card card-flavor"><b>Flavor</b><span>Cocoa, citrus &amp; honey</span><i></i></div>
+        </div>
+
+        <div class="taste-copy">
+          <span class="num">3</span>
+          <p class="eyebrow">Crafted to order</p>
+          <h2 class="mega taste-title">Make<br>Time<br>Taste<br>Better</h2>
+          <p class="side-copy">Silky milk, a double shot and a little bit of art. Sit down, slow down — this is coffee made for conversation.</p>
+          <a href="#menu" class="pill">Find Your Cup</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MENU ============ -->
+    <section class="menu" id="menu">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow">What we pour</p>
+          <h2 class="section-title">The Menu</h2>
+        </header>
+
+        <div class="menu-tabs reveal" role="tablist" aria-label="Menu categories">
+          <button type="button" class="tab active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button type="button" class="tab" data-filter="espresso" role="tab" aria-selected="false">Espresso Bar</button>
+          <button type="button" class="tab" data-filter="slow" role="tab" aria-selected="false">Slow Brew</button>
+          <button type="button" class="tab" data-filter="sweet" role="tab" aria-selected="false">Sweet Things</button>
+        </div>
+        <div class="menu-grid" id="menuGrid"></div>
+        <p class="menu-note">Tap <b>+</b> to add an item to your order. Pay at the counter or on delivery.</p>
+      </div>
+    </section>
+
+    <!-- ============ STORY ============ -->
+    <section class="story" id="story">
+      <div class="wrap story-grid">
+        <div class="reveal">
+          <p class="eyebrow">Our Story</p>
+          <h2 class="section-title">A cup, a chair<br>&amp; a conversation.</h2>
+        </div>
+        <div class="reveal">
+          <p class="lead">Coffee With KHORSHED started with a simple idea: the best talks happen over a really good cup. So we source carefully, roast in small batches and take our time with every drink.</p>
+          <p class="side-copy">Whether you need a quick espresso on the way to work or a slow afternoon with a pour over and a friend, there is always a seat waiting for you here.</p>
+          <div class="stats">
+            <div><b data-count="12">0</b><span>Origins brewed</span></div>
+            <div><b data-count="3">0</b><span>House roasts</span></div>
+            <div><b data-count="18">0</b><span>Hour cold brew</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section class="reviews" id="reviews">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow">Kind words</p>
+          <h2 class="section-title">Reviews</h2>
+        </header>
+
+        <div class="rv-top">
+          <div class="rv-summary reveal" aria-live="polite">
+            <div class="rv-score">
+              <b id="rvAverage">0.0</b>
+              <div>
+                <div class="stars stars-lg" id="rvAvgStars" aria-hidden="true"></div>
+                <p id="rvCount">No reviews yet</p>
+              </div>
+            </div>
+            <ul class="rv-bars" id="rvBars" aria-label="Filter reviews by rating"></ul>
+          </div>
+
+          <form class="rv-form form reveal" id="reviewForm" novalidate>
+            <h3>Share your experience</h3>
+            <fieldset class="star-input" id="starInput">
+              <legend>Your rating</legend>
+              <div class="star-row">
+                <label><input type="radio" name="rating" value="1"><span class="sr">1 star</span><svg viewBox="0 0 24 24"><path d="M12 2.6l2.9 6 6.6.8-4.9 4.6 1.3 6.5L12 17.3l-5.9 3.2 1.3-6.5L2.5 9.4l6.6-.8z"/></svg></label>
+                <label><input type="radio" name="rating" value="2"><span class="sr">2 stars</span><svg viewBox="0 0 24 24"><path d="M12 2.6l2.9 6 6.6.8-4.9 4.6 1.3 6.5L12 17.3l-5.9 3.2 1.3-6.5L2.5 9.4l6.6-.8z"/></svg></label>
+                <label><input type="radio" name="rating" value="3"><span class="sr">3 stars</span><svg viewBox="0 0 24 24"><path d="M12 2.6l2.9 6 6.6.8-4.9 4.6 1.3 6.5L12 17.3l-5.9 3.2 1.3-6.5L2.5 9.4l6.6-.8z"/></svg></label>
+                <label><input type="radio" name="rating" value="4"><span class="sr">4 stars</span><svg viewBox="0 0 24 24"><path d="M12 2.6l2.9 6 6.6.8-4.9 4.6 1.3 6.5L12 17.3l-5.9 3.2 1.3-6.5L2.5 9.4l6.6-.8z"/></svg></label>
+                <label><input type="radio" name="rating" value="5"><span class="sr">5 stars</span><svg viewBox="0 0 24 24"><path d="M12 2.6l2.9 6 6.6.8-4.9 4.6 1.3 6.5L12 17.3l-5.9 3.2 1.3-6.5L2.5 9.4l6.6-.8z"/></svg></label>
+                <span class="star-word" id="starWord">Tap a star</span>
+              </div>
+              <em class="star-error" id="starError"></em>
+            </fieldset>
+            <label class="field"><span>Your name</span><input name="name" maxlength="40" autocomplete="name" required><em></em></label>
+            <label class="field"><span>Your review</span><textarea name="text" rows="4" maxlength="600" required placeholder="What did you order? How was it?"></textarea><em></em><small class="counter"><span id="rvChars">0</span>/600</small></label>
+            <label class="hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
+            <button type="submit" class="pill pill-wide" id="rvSubmit">Post Review</button>
+            <p class="rv-status" id="rvStatus" role="status"></p>
+          </form>
+        </div>
+
+        <div class="rv-toolbar">
+          <p id="rvShowing"></p>
+          <div class="rv-tools">
+            <button type="button" class="chip" id="rvClear" hidden>Show all ✕</button>
+            <label class="sort"><span>Sort</span>
+              <select id="rvSort">
+                <option value="new">Newest</option>
+                <option value="high">Highest rated</option>
+                <option value="low">Lowest rated</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <ul class="rv-list" id="reviewList"></ul>
+        <div class="rv-empty" id="rvEmpty">
+          <p>No reviews yet.</p>
+          <span>Be the first to tell us how your coffee was.</span>
+        </div>
+        <div class="rv-more"><button type="button" class="pill pill-ghost" id="rvMore" hidden>Show more reviews</button></div>
+        <p class="rv-note" id="rvNote" hidden></p>
+      </div>
+    </section>
+
+    <!-- ============ VISIT ============ -->
+    <section class="visit" id="visit">
+      <div class="wrap visit-grid">
+        <h2 class="mega visit-title reveal">Come<br>say hi.</h2>
+        <div class="visit-info reveal">
+          <div>
+            <p class="eyebrow">Find us</p>
+            <p data-address>KUET, Khulna<br>Bangladesh</p>
+            <a class="directions" id="directions" href="#" target="_blank" rel="noopener">Get directions ↗</a>
+          </div>
+          <div>
+            <p class="eyebrow">Opening hours</p>
+            <p>Sat – Thu · 8:00 – 22:00<br>Friday · 15:00 – 23:00</p>
+          </div>
+          <div>
+            <p class="eyebrow">Say hello</p>
+            <p><a href="mailto:sheikhkhorshed1668@gmail.com">sheikhkhorshed1668@gmail.com</a><br><a href="tel:+8801764701566">01764 701566</a></p>
+          </div>
+          <p class="open-status" id="openStatus"></p>
+          <button type="button" class="pill pill-light" data-open-booking>Book a Table</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-row">
+      <a href="#top" class="logo logo-light" aria-label="Coffee With KHORSHED, back to top">
+        <svg class="logo-mark" viewBox="90 38 220 220" aria-hidden="true">
+          <path class="bl" d="M200 50 C170 110 230 190 200 250 A70 100 0 0 1 200 50 Z"/>
+          <path class="br" d="M200 50 C170 110 230 190 200 250 A70 100 0 0 0 200 50 Z"/>
+        </svg>
+        <span class="logo-text">
+          <span class="logo-small">Coffee</span>
+          <span class="logo-with">with</span>
+          <span class="logo-big">KHORSHED</span>
+        </span>
+      </a>
+      <p>© <span id="year">2026</span> Coffee With KHORSHED. Brewed with love.</p>
+      <a href="#top" class="link">Back to top <span>↑</span></a>
+    </div>
+  </footer>
+
+  <!-- ============ CART DRAWER ============ -->
+  <div class="overlay" id="overlay" hidden></div>
+
+  <aside class="drawer" id="cart" role="dialog" aria-modal="true" aria-labelledby="cartTitle" hidden>
+    <header class="drawer-head">
+      <h2 id="cartTitle">Your Order</h2>
+      <button type="button" class="icon-btn" data-close aria-label="Close">✕</button>
+    </header>
+
+    <div class="drawer-body">
+      <!-- step 1: items -->
+      <div class="step" data-step="items">
+        <ul class="cart-list" id="cartList"></ul>
+        <div class="cart-empty" id="cartEmpty">
+          <p>Your cup is empty.</p>
+          <a href="#menu" class="link" data-close>Browse the menu <span>→</span></a>
+        </div>
+      </div>
+
+      <!-- step 2: details -->
+      <form class="step form" data-step="details" id="orderForm" novalidate hidden>
+        <fieldset class="seg">
+          <legend>How would you like it?</legend>
+          <label><input type="radio" name="type" value="Pickup" checked><span>Pickup</span></label>
+          <label><input type="radio" name="type" value="Dine-in"><span>Dine-in</span></label>
+          <label><input type="radio" name="type" value="Delivery"><span>Delivery</span></label>
+        </fieldset>
+        <label class="field"><span>Your name</span><input name="name" autocomplete="name" required minlength="2"><em></em></label>
+        <label class="field"><span>Phone number</span><input name="phone" type="tel" autocomplete="tel" required inputmode="tel"><em></em></label>
+        <label class="field" data-delivery hidden><span>Delivery address</span><textarea name="address" rows="2" autocomplete="street-address"></textarea><em></em></label>
+        <label class="field" data-table hidden><span>Table number (optional)</span><input name="table" inputmode="numeric"><em></em></label>
+        <label class="field"><span>Notes (optional)</span><textarea name="notes" rows="2" placeholder="Oat milk, less sugar, extra hot…"></textarea></label>
+      </form>
+
+      <!-- step 3: done -->
+      <div class="step done" data-step="done" hidden>
+        <div class="done-mark">✓</div>
+        <h3>Order <span id="orderNo"></span> is ready to send</h3>
+        <p>We opened <span data-channel>WhatsApp</span> with your order filled in. Press send there and we'll start brewing.</p>
+        <p class="small">Nothing opened? <a href="#" id="resend" target="_blank" rel="noopener">Tap here to send it again</a>.</p>
+        <button type="button" class="pill" data-close>Done</button>
+      </div>
+    </div>
+
+    <footer class="drawer-foot" id="cartFoot">
+      <div class="totals">
+        <div><span>Subtotal</span><b id="subtotal">৳0</b></div>
+        <div id="deliveryRow" hidden><span>Delivery</span><b id="deliveryFee">৳0</b></div>
+        <div class="grand"><span>Total</span><b id="total">৳0</b></div>
+      </div>
+      <div class="foot-btns">
+        <button type="button" class="pill pill-ghost" id="backBtn" hidden>Back</button>
+        <button type="button" class="pill pill-wide" id="nextBtn">Continue</button>
+      </div>
+    </footer>
+  </aside>
+
+  <!-- ============ BOOKING MODAL ============ -->
+  <div class="modal" id="booking" role="dialog" aria-modal="true" aria-labelledby="bookTitle" hidden>
+    <div class="modal-card">
+      <button type="button" class="icon-btn modal-x" data-close aria-label="Close">✕</button>
+      <div data-step="form">
+        <p class="eyebrow">Reservations</p>
+        <h2 id="bookTitle" class="modal-title">Book a Table</h2>
+        <form class="form" id="bookForm" novalidate>
+          <div class="row">
+            <label class="field"><span>Name</span><input name="name" autocomplete="name" required minlength="2"><em></em></label>
+            <label class="field"><span>Phone</span><input name="phone" type="tel" autocomplete="tel" required inputmode="tel"><em></em></label>
+          </div>
+          <div class="row row-3">
+            <label class="field"><span>Date</span><input name="date" type="date" required><em></em></label>
+            <label class="field"><span>Time</span><input name="time" type="time" step="900" required><em></em></label>
+            <label class="field"><span>Guests</span>
+              <select name="guests" required>
+                <option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8+</option>
+              </select><em></em>
+            </label>
+          </div>
+          <p class="hint" id="hoursHint">Open Sat – Thu 8:00 – 22:00 · Friday 15:00 – 23:00</p>
+          <label class="field"><span>Occasion or request (optional)</span><textarea name="notes" rows="2" placeholder="Birthday, window seat, quiet corner…"></textarea></label>
+          <button type="submit" class="pill pill-wide">Request Booking</button>
+        </form>
+      </div>
+      <div class="done" data-step="done" hidden>
+        <div class="done-mark">✓</div>
+        <h3>Almost there!</h3>
+        <p id="bookSummary"></p>
+        <p>We opened <span data-channel>WhatsApp</span> with your booking filled in. Send it and we'll confirm your table.</p>
+        <p class="small">Nothing opened? <a href="#" id="bookResend" target="_blank" rel="noopener">Tap here to send it again</a>.</p>
+        <button type="button" class="pill" data-close>Done</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- floating scroll button -->
+  <a href="#top" class="fab" aria-label="Scroll to top">
+    <svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="19" class="fab-track"/><circle cx="22" cy="22" r="19" class="fab-ring" id="fabRing"/></svg>
+    <span class="fab-dot"></span>
+  </a>
+
+  <script src="script.js"></script>
+  <script src="app.js"></script>
+  <script src="reviews.js"></script>
+</body>
+</html>

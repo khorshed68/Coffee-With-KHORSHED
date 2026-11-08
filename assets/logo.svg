@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 360" width="400" height="360">
+  <title>Coffee With KHORSHED</title>
+  <rect width="400" height="360" fill="#efe6d9"/>
+  <g transform="translate(200 128) scale(.62) translate(-200 -150)">
+    <path d="M200 50 C170 110 230 190 200 250 A70 100 0 0 1 200 50 Z" fill="#5b321c" transform="translate(-14 0) rotate(-12 200 250)"/>
+    <path d="M200 50 C170 110 230 190 200 250 A70 100 0 0 0 200 50 Z" fill="#7a4421" transform="translate(14 0) rotate(12 200 250)"/>
+  </g>
+  <text x="200" y="268" text-anchor="middle" font-family="'DM Serif Display', Georgia, serif" font-size="30" font-style="italic" fill="#2a1a10">Coffee <tspan fill="#b8763e" font-size="22">with</tspan></text>
+  <text x="200" y="318" text-anchor="middle" font-family="'DM Serif Display', Georgia, serif" font-size="54" letter-spacing="3" fill="#2a1a10">KHORSHED</text>
+</svg>
